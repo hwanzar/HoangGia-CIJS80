@@ -1,0 +1,67 @@
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+        "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+        "Helvetica Neue", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+        monospace;
+}
+h1 {
+    font-weight: normal;
+    font-size: 25px;
+}
+.socials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.social {
+    display: flex;
+    margin: 12px;
+    border: 1px solid black;
+    padding: 1px;
+    gap: 4px;
+}
+p {
+    padding-right: 4px;
+}
+img {
+    display: flex;
+    margin-top: 13px;
+    /* margin-left: 4px; */
+    padding-left: 4px;
+    height: 26px;
+    width: 26px;
+}
+input {
+    height: 30px;
+    width: 95%;
+    margin: 2px;
+}
+button {
+    height: 30px;
+    width: 97%;
+    margin: 4px;
+    background-color: rgb(253, 196, 90);
+}
+.login-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    width: fit-content;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+.link {
+    display: flex;
+    justify-content: space-between;
+}
+a {
+    font-size: 14px;
+}
