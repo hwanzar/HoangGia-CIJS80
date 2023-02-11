@@ -13,10 +13,10 @@ const LoginPage = () => {
   return (
     <>
     <h1 className ="center">Đăng nhập</h1>
-    <div className ="center">
+    <div className ="login-container ">
         
         <form onSubmit={handleSubmit}>
-        <div>
+        <div>   
             {/* <label htmlFor="username">Username:</label> */}
             <input
             type="text"
@@ -36,7 +36,7 @@ const LoginPage = () => {
             onChange={(e) => setPassword(e.target.value)}
             />
         </div>
-        <button type="submit">Submit</button>
+        <button className="btn btn-primary"type="submit">Submit</button>
         </form>
     </div>
     </>
