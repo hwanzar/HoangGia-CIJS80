@@ -1,0 +1,211 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+        "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+        "Helvetica Neue", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: #323232;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+        monospace;
+}
+.h1 {
+    font-weight: bold;
+    font-size: 19px;
+    color: white;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    padding-left: 0px;
+    gap: 20px;
+
+    /* position: absolute; */
+    width: 799px;
+    height: 853px;
+    /* left: 582px; */
+    /* top: 179px; */
+
+    background: #1a1a1a;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 12px;
+}
+.list-items {
+    /* Auto layout */
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+    margin: 10px;
+
+    width: 739px;
+    height: 120px;
+
+    background: #575757;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 12px;
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 4;
+    flex-grow: 0;
+}
+.item-date {
+    /* Auto layout */
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+
+    width: 114px;
+    height: 100px;
+
+    background: #1a1a1a;
+    border: 1px solid #ffffff;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 12px;
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+
+    font-weight: 700;
+    color: white;
+}
+.item-title {
+    padding: 0px;
+    margin: 0px;
+    color: white;
+    font-weight: 700;
+    font-size: 36px;
+}
+
+.button-container {
+    /* Header */
+
+    /* Auto layout */
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* padding: 28px 286px; */
+    /* gap: 10px; */
+    margin-bottom: 44px;
+    /* position: absolute; */
+    width: 799px;
+    height: 100px;
+    /* left: 582px; */
+    /* top: 35px; */
+
+    background: #897bda;
+    /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); */
+    border-radius: 12px;
+}
+.adder-container {
+    display: flex;
+    flex-direction: column;
+    width: 799px;
+    height: fit-content;
+    background: #897bda;
+    border-radius: 12px;
+    margin-bottom: 44px;
+}
+
+.button-expense {
+    /* Button */
+
+    /* Auto layout */
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 16px;
+    gap: 10px;
+
+    width: 227px;
+    height: 44px;
+    color: white;
+    font-weight: bold;
+    background: #862796;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 12px;
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+.adder-label {
+    color: white;
+    font-size: 18px;
+}
+
+.option-container {
+    display: flex;
+    justify-content: right;
+    margin: 10px;
+}
+.option-button-adder {
+    margin: 5px;
+    width: 68px;
+    border-radius: 12px;
+    background: #862796;
+    color: white;
+    font-weight: 700;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-weight: 700;
+    font-size: 18px;
+}
+.option-button-cancel {
+    margin: 5px;
+    padding: 10px;
+    width: 100px;
+    border-radius: 12px;
+    background: #d0d0d0;
+    border: 1px solid #862796;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.submit-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px 0px;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.adder-input {
+    width: 500px;
+    height: 40px;
+    background: #ffffff;
+    border-radius: 12px;
+}
