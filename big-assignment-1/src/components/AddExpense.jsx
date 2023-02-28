@@ -1,8 +1,13 @@
 import { useState } from "react";
 
-const ButtonAdd = () => {
-    const [showForm, setShowForm] = useState(false);
-    const [list, setList] = useState([]);
+const ButtonAdd = ({
+    showForm,
+    handleButtonClick,
+    handleSubmit,
+    handleInputChange,
+    handleCancel,
+    handleAdd,
+}) => {
     const handleButtonClick = () => {
         setShowForm(true);
     };
