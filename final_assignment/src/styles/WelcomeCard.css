@@ -1,0 +1,21 @@
+.welcome {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 180px;
+    background-color: #474547;
+    /* 323132 */
+    color: white;
+    font-size: 17px;
+
+    margin-top: 50px;
+    padding: 10px;
+    border-radius: 20px;
+    width: 40%;
+    border: 1px solid #525152;
+}
+
+p {
+    font-weight: 400;
+}

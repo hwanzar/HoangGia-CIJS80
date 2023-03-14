@@ -1,25 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+import React, { createContext, useState } from "react";
+import Header from "./components/FoodList";
+import FoodList from "./components/Header";
+import WelcomeCard from "./components/WelcomeCard";
+import YourCart from "./components/YourCart";
+import { UserContext } from "./UserContext";
+const App = () => {
+    return (
+        <div>
+            <UserContext.Provider>
+                <Header />
+                <WelcomeCard />
+                <div className="menu">
+                    <FoodList />
+                </div>
+            </UserContext.Provider>
+        </div>
+    );
+};
 
 export default App;

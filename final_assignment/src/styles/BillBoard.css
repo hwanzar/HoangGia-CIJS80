@@ -1,0 +1,72 @@
+.bill-board {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    height: 100px;
+    width: 300px;
+    flex-direction: column;
+    border-radius: 20px;
+    min-height: 200px;
+    height: auto;
+    width: 300px;
+    padding: 10px;
+}
+
+h3 {
+    font-size: 16px;
+}
+
+.bill-info {
+    /* border-bottom: 1px solid black; */
+    display: flex;
+    margin: 0px;
+
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 100px;
+}
+.bill-info-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.bill-price {
+    /* color: #802408; */
+    border-radius: 10px;
+    border: 1px solid gray;
+    padding: 1px 5px 1px 5px;
+    font-size: 12px;
+    color: gray;
+}
+.change-button {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+}
+
+.change-button button {
+    margin: 2px;
+    padding: 1px 5px 1px 5px;
+    min-width: 20px;
+    border-radius: 2px;
+    border: 1px solid gray;
+}
+
+.bill-button {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: right;
+    margin-top: 10px;
+    padding: 10px;
+}
+.bill-button button {
+    margin: 5px;
+    border-radius: 24px;
+    padding: 8px;
+}
+hr {
+    margin: 4px;
+}
