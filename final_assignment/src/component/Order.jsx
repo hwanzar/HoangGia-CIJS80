@@ -1,12 +1,12 @@
 import { useForm } from "react-hook-form";
 import axios from "axios";
 // import './Order.css'
-import { useContext } from "react";
 import { UserContext } from "./UserContext";
+import { useContext } from "react";
 
-export default function Order({ handleCancel, handleOrderSent }) {
-    const { cart, setOrderSented } = useContext(UserContext);
-
+export default function Order({ handleCancel, handleOrderShow }) {
+    const { cart } = useContext(UserContext);
+    const { setOrderSented } = useContext(UserContext);
     const {
         register,
         handleSubmit,
@@ -28,7 +28,7 @@ export default function Order({ handleCancel, handleOrderSent }) {
                 setOrderSented(true);
                 console.log(response);
                 /* alert("DONE"); */
-                handleOrderSent();
+                handleOrderShow();
             })
             .catch((error) => {
                 console.log(order);
@@ -48,7 +48,7 @@ export default function Order({ handleCancel, handleOrderSent }) {
                     <input
                         style={
                             errors.name && {
-                                backgroundColor: "red",
+                                backgroundColor: "pink",
                                 color: "white",
                             }
                         }
@@ -103,7 +103,7 @@ export default function Order({ handleCancel, handleOrderSent }) {
                     />
                     {errors.postalcode && (
                         <span>
-                            postal code must be 5 characters long
+                            Please enter a valid postal code ( 5 character long
                             )!
                         </span>
                     )}

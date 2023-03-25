@@ -8,7 +8,9 @@ const Header = () => {
     // const [billShown, setBillShown] = useState(false);
 
     const handleCartOptionClick = () => {
-        setBillShown(true);
+        if (cartCounter > 0) {
+            setBillShown(true);
+        }
     };
 
     return (

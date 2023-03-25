@@ -6,7 +6,7 @@ export const UserProvider = ({ children }) => {
     const [cart, setCart] = useState([]);
     const [formShown, setFormShown] = useState(false);
     const [totalMoney, setTotalMoney] = useState(0);
-    const [OrderSent, setOrderSent] = useState(false);
+    const [OrderShow, setOrderShow] = useState(false);
     const [isLoadingIn, setIsLoadingIn] = useState(false);
     const [orderSented, setOrderSented] = useState(false);
     return (
@@ -16,8 +16,8 @@ export const UserProvider = ({ children }) => {
                 setOrderSented,
                 isLoadingIn,
                 setIsLoadingIn,
-                OrderSent,
-                setOrderSent,
+                OrderShow,
+                setOrderShow,
                 cartCounter,
                 setCartCounter,
                 billShown,
